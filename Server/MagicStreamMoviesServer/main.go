@@ -16,6 +16,7 @@ func main() {
 	router.GET("/movies", controller.GetMovies())
 	router.GET("/movie/:imdb_id", controller.GetMovie())
 	router.POST("/addmovie", controller.AddMovie())
+	router.POST("/register", controller.RegisterUser())
 
 	//router.Run starts a HTTP server using go standard net HTTP package
 	//net HTTP package spawns a new go routine for each incoming HTTP request
